@@ -9,7 +9,7 @@ $(document).ready(function() {
 		// set function name to reset field
 		function resetField() {
 			// reset field for #city-type to original placeholder text
-			$('#city-type').val('Enter a city name...');
+			$('#city-type').attr('placeholder', 'Enter a city name...').val('');
 		}
 
 		// get city-type value
