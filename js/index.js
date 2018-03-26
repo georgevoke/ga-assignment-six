@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	// on submit button click
-	$('#submit-btn').on('click', function() {
+	$('#submit-btn').on('click', function(event) {
 		
 		// prevent default submit behaviour
 		event.preventDefault();
@@ -9,7 +9,7 @@ $(document).ready(function() {
 		// set function name to reset field
 		function resetField() {
 			// reset field for #city-type to original placeholder text
-			$('#city-type').attr('placeholder', 'Enter a city name...').val('');
+			$('#city-type').val('Enter a city name...');
 		}
 
 		// get city-type value
